@@ -14,10 +14,10 @@ Files in this repo
 The R code called run_analysis.R does the following: 
 
 ###I. Merge training and test sets and prepare intermediate dataset 
-1-Reading and preparing subject lists. 
-2-Reading, preparing and labeling descriptive activity names to name the activities in the data set.-Labeling the data set with descriptive activity names. 
-3-Reading and preparing feature data on the mean and standard deviation for each measurement. 
-4-put dataset together in the format of: subjects, activities (Y), features data (X).
+1. Reading and preparing subject lists. 
+2. Reading, preparing and labeling descriptive activity names to name the activities in the data set.-Labeling the data set with descriptive activity names. 
+3. Reading and preparing feature data on the mean and standard deviation for each measurement. 
+4. Put dataset together in the format of: subjects, activities (Y), features data (X).
 
 ###II. Using the intermediate dataset, create final aggregated dataset with average of each variable for each activity and each subject
 
@@ -29,5 +29,5 @@ The script runs using the UCI HAR Dataset directory (the zip had this folder) an
 * test/
 * train/
 
-The final output is created in the same directory: tidy_aggr.txt
+The final output is created in the same directory: **tidy_aggr.txt**
  
