@@ -1,83 +1,85 @@
 
 
-Codebook
+#Codebook
 
-#Variables in the tidy_aggr.txt
+##Variables in the **tidy_aggr.txt**
 
-subject                 : int  1 2 3 4 5 6 7 8 9 10 ... 30
-label                   : Factor w/ 6 levels 
+Variable | Definition
+---------|-----------
+subject                 | int  from 1  to 30
+label                   | Factor w/ 6 levels 
                           "LAYING","SITTING", "LAYIN"
                           "WALKING", "WALKING_UPSTAIRS", 
                           "WALKING_DOWNSTAIRS"
-tbodyaccmeanx           : num 
-tbodyaccmeany           : num  
-tbodyaccmeanz           : num  
-tbodyaccstdx            : num  
-tbodyaccstdy            : num  
-tbodyaccstdz            : num 
-tgravityaccmeanx        : num  
-tgravityaccmeany        : num 
-tgravityaccmeanz        : num  
-tgravityaccstdx         : num  
-tgravityaccstdy         : num  
-tgravityaccstdz         : num  
-tbodyaccjerkmeanx       : num  
-tbodyaccjerkmeany       : num 
-tbodyaccjerkmeanz       : num 
-tbodyaccjerkstdx        : num
-tbodyaccjerkstdy        : num  
-tbodyaccjerkstdz        : num  
-tbodygyromeanx          : num  
-tbodygyromeany          : num 
-tbodygyromeanz          : num  
-tbodygyrostdx           : num  
-tbodygyrostdy           : num  
-tbodygyrostdz           : num 
-tbodygyrojerkmeanx      : num  
-tbodygyrojerkmeany      : num  
-tbodygyrojerkmeanz      : num  
-tbodygyrojerkstdx       : num  
-tbodygyrojerkstdy       : num  
-tbodygyrojerkstdz       : num  
-tbodyaccmagmean         : num  
-tbodyaccmagstd          : num  
-tgravityaccmagmean      : num  
-tgravityaccmagstd       : num  
-tbodyaccjerkmagmean     : num  
-tbodyaccjerkmagstd      : num  
-tbodygyromagmean        : num  
-tbodygyromagstd         : num  
-tbodygyrojerkmagmean    : num  
-tbodygyrojerkmagstd     : num  
-fbodyaccmeanx           : num  
-fbodyaccmeany           : num  
-fbodyaccmeanz           : num  
-fbodyaccstdx            : num  
-fbodyaccstdy            : num  
-fbodyaccstdz            : num  
-fbodyaccjerkmeanx       : num 
-fbodyaccjerkmeany       : num 
-fbodyaccjerkmeanz       : num  
-fbodyaccjerkstdx        : num  
-fbodyaccjerkstdy        : num  
-fbodyaccjerkstdz        : num  
-fbodygyromeanx          : num 
-fbodygyromeany          : num  
-fbodygyromeanz          : num  
-fbodygyrostdx           : num  
-fbodygyrostdy           : num  
-fbodygyrostdz           : num  
-fbodyaccmagmean         : num 
-fbodyaccmagstd          : num  
-fbodybodyaccjerkmagmean : num  
-fbodybodyaccjerkmagstd  : num 
-fbodybodygyromagmean    : num  
-fbodybodygyromagstd     : num  
-fbodybodygyrojerkmagmean: num  
-fbodybodygyrojerkmagstd : num 
+tbodyaccmeanx           | num 
+tbodyaccmeany           | num  
+tbodyaccmeanz           | num  
+tbodyaccstdx            | num  
+tbodyaccstdy            | num  
+tbodyaccstdz            | num 
+tgravityaccmeanx        | num  
+tgravityaccmeany        | num 
+tgravityaccmeanz        | num  
+tgravityaccstdx         | num  
+tgravityaccstdy         | num  
+tgravityaccstdz         | num  
+tbodyaccjerkmeanx       | num  
+tbodyaccjerkmeany       | num 
+tbodyaccjerkmeanz       | num 
+tbodyaccjerkstdx        | num
+tbodyaccjerkstdy        | num  
+tbodyaccjerkstdz        | num  
+tbodygyromeanx          | num  
+tbodygyromeany          | num 
+tbodygyromeanz          | num  
+tbodygyrostdx           | num  
+tbodygyrostdy           | num  
+tbodygyrostdz           | num 
+tbodygyrojerkmeanx      | num  
+tbodygyrojerkmeany      | num  
+tbodygyrojerkmeanz      | num  
+tbodygyrojerkstdx       | num  
+tbodygyrojerkstdy       | num  
+tbodygyrojerkstdz       | num  
+tbodyaccmagmean         | num  
+tbodyaccmagstd          | num  
+tgravityaccmagmean      | num  
+tgravityaccmagstd       | num  
+tbodyaccjerkmagmean     | num  
+tbodyaccjerkmagstd      | num  
+tbodygyromagmean        | num  
+tbodygyromagstd         | num  
+tbodygyrojerkmagmean    | num  
+tbodygyrojerkmagstd     | num  
+fbodyaccmeanx           | num  
+fbodyaccmeany           | num  
+fbodyaccmeanz           | num  
+fbodyaccstdx            | num  
+fbodyaccstdy            | num  
+fbodyaccstdz            | num  
+fbodyaccjerkmeanx       | num 
+fbodyaccjerkmeany       | num 
+fbodyaccjerkmeanz       | num  
+fbodyaccjerkstdx        | num  
+fbodyaccjerkstdy        | num  
+fbodyaccjerkstdz        | num  
+fbodygyromeanx          | num 
+fbodygyromeany          | num  
+fbodygyromeanz          | num  
+fbodygyrostdx           | num  
+fbodygyrostdy           | num  
+fbodygyrostdz           | num  
+fbodyaccmagmean         | num 
+fbodyaccmagstd          | num  
+fbodybodyaccjerkmagmean | num  
+fbodybodyaccjerkmagstd  | num 
+fbodybodygyromagmean    | num  
+fbodybodygyromagstd     | num  
+fbodybodygyrojerkmagmean| num  
+fbodybodygyrojerkmagstd | num 
 
 
-#Data & Feature Selection 
+##Data & Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -88,23 +90,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+*tBodyAcc-XYZ
+*tGravityAcc-XYZ
+*tBodyAccJerk-XYZ
+*tBodyGyro-XYZ
+*tBodyGyroJerk-XYZ
+*tBodyAccMag
+*tGravityAccMag
+*tBodyAccJerkMag
+*tBodyGyroMag
+*tBodyGyroJerkMag
+*fBodyAcc-XYZ
+*fBodyAccJerk-XYZ
+*fBodyGyro-XYZ
+*fBodyAccMag
+*fBodyAccJerkMag
+*fBodyGyroMag
+*fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 *mean(): Mean value
