@@ -73,6 +73,7 @@ fbodybodygyromagmean    | num*
 fbodybodygyromagstd     | num*  
 fbodybodygyrojerkmagmean| num*  
 fbodybodygyrojerkmagstd | num* 
+
 *See description below.
 
 ## Data & Feature Selection 
