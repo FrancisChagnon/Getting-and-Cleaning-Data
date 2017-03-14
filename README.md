@@ -3,12 +3,13 @@
 
 ## To create a tidy data set of wearable computing data
 
-Source : http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Raw data source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Files in this repo
+Files in this repo:
 * README.md (explains the analysis files)
 * CodeBook.md (describing variables, data and transformations)
 * run_analysis.R (R code)
+* tidy_aggr.txt (the final tidy dataset)
 
 ## run_analysis.R
 
@@ -30,5 +31,5 @@ The script runs using the UCI HAR Dataset directory (the zip had this folder) an
 * test/
 * train/
 
-The final output is created in the same directory: **tidy_aggr.txt**
+The final output with tidy data is created in the same directory: **tidy_aggr.txt**
  
