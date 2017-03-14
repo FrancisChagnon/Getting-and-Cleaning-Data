@@ -1,4 +1,5 @@
-﻿# Getting and Cleaning Data Final Project
+﻿
+# Getting and Cleaning Data Final Project
 
 ## To create a tidy data set of wearable computing data
 
