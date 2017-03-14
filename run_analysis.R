@@ -63,8 +63,3 @@ aggr_data_set <- aggregate(data_set[, 3:ncol(data_set)],
 
 #III. WRITE AGGREGATED DATASET FOR COURSE UPLOAD 
 write.table(format(aggr_data_set, scientific=T), "C:/Users/z66035/Desktop/Data cleaning/UCI HAR Dataset/tidy_aggr.txt", row.names=F, col.names=F, quote=2) 
-
-
-
-str(aggr_data_set)
-sqldf("SELECT aggr_data_set.subject FROM aggr_data_set")
